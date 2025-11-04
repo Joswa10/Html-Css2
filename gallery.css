@@ -1,0 +1,113 @@
+/* Reset defaults */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Background gradient */
+body {
+  background: linear-gradient(135deg, #2c5364, #203a43, #18282f);
+  color: #d5c9d3;
+  min-height: 100vh;
+}
+
+/* Navigation bar */
+header {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 15px 0;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  gap: 40px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #d5c9d3;
+  font-weight: 600;
+  font-size: 18px;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+nav a:hover {
+  color: #694463;
+  transform: scale(1.1);
+}
+
+/* Hero section */
+.hero {
+  text-align: center;
+  padding: 100px 20px 60px;
+  background: linear-gradient(to right, rgba(255, 204, 112, 0.1), rgba(255, 112, 112, 0.1));
+  border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+.hero h1 {
+  font-size: 3rem;
+  color: #d5c9d3;
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.3);
+  font-family: "Momo Signature", cursive;
+}
+
+/* Section content */
+.section-content {
+  padding: 50px 10%;
+  text-align: center;
+}
+
+.section-content h2 {
+  font-size: 2rem;
+  color: #d5c9d3;
+  margin-bottom: 15px;
+}
+
+.section-content p {
+  font-size: 18px;
+  color: #d5c9d3;
+  margin-bottom: 40px;
+}
+
+/* Gallery grid layout */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  justify-items: center;
+  align-items: center;
+}
+
+/* Gallery images */
+.gallery-grid img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  cursor: pointer;
+}
+
+.gallery-grid img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 15px 30px rgba(255, 204, 112, 0.4);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #d5c9d3;
+  font-size: 14px;
+  letter-spacing: 1px;
+  border-top: 1px solid rgba(255,255,255,0.1);
+  margin-top: 50px;
+}

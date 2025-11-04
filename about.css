@@ -1,0 +1,136 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Background */
+body {
+  background: linear-gradient(135deg, #101018, #203a43, #2c5364);
+  color: #d5c9d3;
+  min-height: 100vh;
+}
+
+/* Navigation */
+header {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 15px 0;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  gap: 40px;
+  font-family: "Rubik Iso", system-ui;
+  font-weight: 400;
+  font-style: normal;;
+}
+
+nav a {
+  text-decoration: none;
+  color: #d5c9d3;
+  font-weight: 600;
+  font-size: 18px;
+  transition: color 0.3s ease, transform 0.3s ease;
+  font-family: "Rubik Iso", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+nav a:hover {
+  color: #ca61b9;
+  transform: scale(1.1);
+}
+
+/* Hero section */
+.hero {
+  text-align: center;
+  padding: 100px 20px 60px;
+  background: linear-gradient(to right, rgba(255, 204, 112, 0.1), rgba(255, 112, 112, 0.1));
+  border-bottom: 2px solid rgba(255, 255, 255, 0.035);
+}
+
+.text {max-width: 700px; /* narrower box for better layout */
+  margin: 0 auto; /* centers the section */
+  text-align: justify;
+  line-height: 1.8;
+  color: #d5c9d3;
+  font-size: 18px;
+  padding: 30px 20px;
+  background: rgba(0, 0, 0, 0.15); /* subtle background */
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.hero h1 {
+  font-size: 3rem;
+  color: #d5c9d3;
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.3);
+  font-family: "Momo Signature", cursive;
+}
+
+.about-text p {
+  margin-bottom: 15px;
+  font-family: "Momo Signature";
+  font-weight: 400;
+  font-style: normal;
+  
+}
+
+.hero p {
+
+}
+
+.about-text p {
+  margin-bottom: 15px;
+  font-family: "Momo Signature";
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+/* Section */
+.section-content {
+  padding: 50px 10%;
+  text-align: center;
+}
+
+/* Gallery */
+.gallery-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.gallery-grid img {
+  width: 350px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.gallery-grid img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 15px 30px rgba(193, 162, 103, 0.4);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #d5c9d3;
+  font-size: 14px;
+  letter-spacing: 1px;
+  border-top: 1px solid rgba(255,255,255,0.1);
+  margin-top: 50px;
+}
